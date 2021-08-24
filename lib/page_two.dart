@@ -1,3 +1,4 @@
+import 'package:basic_flutter/widget.dart';
 import 'package:flutter/material.dart';
 
 class PageTwo extends StatefulWidget {
@@ -10,7 +11,7 @@ class _PageTwoState extends State<PageTwo> {
 
   int currentIndex = 2;
   List <Widget> tabs = [
-    one(), //referenced function
+    WidgetFile(), //referenced from another file
     Center(child: Text("Search"),),
     Center(child: Text("Home"),),
     Center(child: Text("Activities"),),
